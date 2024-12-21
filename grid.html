@@ -1,0 +1,86 @@
+<style>
+    .grid-container{
+        display: grid;
+    background-color: aqua;
+        grid-template-rows:  1fr 2fr 1fr;
+        gap: 5px;
+        height: 10%;
+    }
+    header{
+        background-color: skyblue;
+        text-align: center;
+        padding: 10px;
+    }
+    section{
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+        gap: 10px;
+        background-color: aqua;
+        padding: 10px;
+     
+    }
+    aside{
+        background-color: lightgreen;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        margin: 10px;
+        height: 250px;
+        justify-content: center;
+        
+    }
+    article{
+        background-color: orange;
+        padding: 10px;
+        display: grid;
+        text-align: center;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        justify-content: center;
+        margin: 10px;
+    }
+    .image{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        
+    }
+    .image div{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        border: black;
+        width: 80px;
+        height: 80px;
+        border-radius: 2px;
+    }
+    footer{
+        background-color: skyblue;
+        text-align: center;
+        padding: 10px;
+        
+    }
+</style>
+
+
+
+
+
+<div class="grid-container">
+    <header>Header</header>
+    <section> <aside>Aside</aside>
+        <article>
+             <p>Article</p>
+            <div class="image">
+                <div>image</div>
+                <div>image</div>
+                <div>image</div>
+            </div>
+        </article></section>
+
+   
+    <footer>Footer</footer>
+   
+
+</div>
