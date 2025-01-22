@@ -12,9 +12,9 @@
    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
     <h1 class="text-2xl">GREENDEN</h1>
 
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
+    <svg  id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
       
 
   <ul class=" gap-5 text-gray-500 hidden md:flex">
@@ -24,6 +24,18 @@
   </ul>
 
    </nav>
+   
+   <!--Side nav-->
+   <section id="sidenav" class="bg-green-100 fixed z-20 top-0 right-0 transition-all duration-1000" style="width: 50%;height: 100vh; right: -50%;">
+    <div class="text-right p-5">
+      <p  id="closenav" class="inline cursor-pointer">X</p>
+    </div>
+  <ul class=" flex flex-col gap-10 text-gray-500  items-center ">
+    <li><a  class="hover:underline text-black"    href="index.html">Home</a></li>
+    <li><a  class="hover:underline text-black" href="product.html">Products</a></li>
+    <li><a class="hover:underline text-black" href="contact.html">Contact</a></li>
+  </ul>
+   </section>
 <!--contat form-->
 <section class="bg-white dark:bg-gray-900">
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -54,6 +66,6 @@
         <p>The Stand chunk of Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, molestiae</p>
         <p>@ 2021 Greenday.com</p>
        </section>
-
+       <script src="index.js"></script>
   </body>
 </html>
